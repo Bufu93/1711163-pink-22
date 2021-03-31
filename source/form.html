@@ -63,25 +63,35 @@
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="form__name-surname name-surname">
-          <label class="name-surname__label">
+          <div>
+            <label class="name-surname__label"></label>
             <input class="name-surname__input" type="text" name="surename" placeholder="Укажите фамилию *">
-          </label>
-          <label class="name-surname__label">
+          </div>
+          <div>
+            <label class="name-surname__label"></label>
             <input class="name-surname__input" type="text" name="name" placeholder="Введите ваше имя *">
-          </label>
-          <label class="name-surname__label">
+          </div>
+          <div>
+            <label class="name-surname__label"></label>
             <input class="name-surname__input" type="text" name="middlename" placeholder="Ну и отчество тоже">
-          </label>
+          </div>
         </div>
 
         <fieldset class="form__apps form-apps">
           <h4 class="form-apps__title">С каким приложением путешествовали?</h4>
-          <input class="form-apps__input" type="radio" id="ios" value="ios" name="apps">
-          <label class="form-apps__label" for="ios">Pink для iOS</label>
-          <input class="form-apps__input" type="radio" id="android" value="android" name="apps">
-          <label class="form-apps__label" for="android">Pink на Android</label>
-          <input class="form-apps__input" type="radio" id="windows" value="windows" name="apps">
-          <label class="form-apps__label" for="windows">Windows</label>
+          <div>
+            <input class="form-apps__input" type="radio" id="ios" value="ios" name="apps">
+            <label class="form-apps__label" for="ios">Pink для iOS</label>
+          </div>
+          <div>
+            <input class="form-apps__input" type="radio" id="android" value="android" name="apps">
+            <label class="form-apps__label" for="android">Pink на Android</label>
+          </div>
+          <div>
+            <input class="form-apps__input" type="radio" id="windows" value="windows" name="apps">
+            <label class="form-apps__label" for="windows">Windows</label>
+          </div>
+
         </fieldset>
 
         <fieldset class="form__contact-information contact-information">
@@ -91,13 +101,13 @@
             <input class="contact-information__input" id="phone-number" name="phone" type="text"
               placeholder="Номер, пожалуйста">
             <p>
-              <label class="contact-information__label" for="phone-number">НОМЕР ТЕЛЕФОНА</label>
+              <label class="contact-information__label" for="phone-number">Номер телефона</label>
             </p>
           </div>
           <div class="contact-information__email">
             <input class="contact-information__input" id="email" name="email" type="text" placeholder="Введите почту *">
             <p>
-              <label class="contact-information__label" for="email">АДРЕС ПОЧТЫ</label>
+              <label class="contact-information__label" for="email">Адрес почты</label>
             </p>
           </div>
         </fieldset>
@@ -134,7 +144,7 @@
         </fieldset>
 
         <fieldset class="form__discription discription">
-          <h4 class="discription__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h4>
+          <h4 class="discription__title">Опишите свои эмоции</h4>
           <textarea name="text" cols="30" rows="10"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
