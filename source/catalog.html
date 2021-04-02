@@ -63,7 +63,9 @@
       </div>
     </div>
 
-    <div class="panorama">
+    <section class="panorama">
+      <h2 class="visually hidden">Панорама дня</h2>
+
       <img src="img/panorama-desktop.png" alt="Панорамное фото канатная дорога">
       <div class="panorama__container container panorama-under">
         <span class="panorama-txt">Панорама дня</span>
@@ -81,13 +83,15 @@
           в
           перископе, задавайте свои вопросы!</p>
       </div>
-    </div>
+    </section>
 
-    <div class="gallery">
+    <section class="gallery">
+      <h2 class="visually hidden">Галерея</h2>
+
       <div class="gallery__container container">
-        <div class="gallery__list">
+        <ul class="gallery__list">
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-1-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -101,9 +105,9 @@
             </div>
 
             <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          </div>
+          </li>
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-2-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -117,9 +121,9 @@
             </div>
 
             <p class="gallery-item__text">Соседи будут рады!</p>
-          </div>
+          </li>
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-3-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -133,9 +137,9 @@
             </div>
 
             <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          </div>
+          </li>
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-4-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -149,9 +153,9 @@
             </div>
 
             <p class="gallery-item__text">Самая кубанская в мире!</p>
-          </div>
+          </li>
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-5-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -165,9 +169,9 @@
             </div>
 
             <p class="gallery-item__text">Где снег-то?</p>
-          </div>
+          </li>
 
-          <div class="gallery__item gallery-item">
+          <li class="gallery__item gallery-item">
             <img class="gallery-item__img" src="img/photo-6-desktop.jpg" width="300" height="400" alt="">
 
             <div class="gallery-item__author gallery-author">
@@ -181,25 +185,27 @@
             </div>
 
             <p class="gallery-item__text">Всем GM и взаимные лайки!</p>
-          </div>
+          </li>
 
-        </div>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="uploader">
+    <form class="uploader">
       <div class="uploader__container container">
         <p class="uploader__title">Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!</p>
 
         <div class="uploader__uploader-filter uploader-filter">
-
-          <img class="uploader-filter__img" src="img/photo-7-desktop.jpg" width="300" height="400" alt="">
+          <div class="uploader-filter__photo filter-photo">
+            <label class="filter-photo__label" for="filter-photo"></label>
+            <input id="filter-photo" class="filter-photo__input" type="file" />
+          </div>
 
           <div class="uploader-filter__editor filter-editor">
-            <div class="filter-editor__item filter-editor__item--crop"></div>
-            <div class="filter-editor__item filter-editor__item--fill"></div>
-            <div class="filter-editor__item filter-editor__item--contrast"></div>
+            <input type="range" class="filter-editor__item filter-editor__item--crop" />
+            <input type="range" class="filter-editor__item filter-editor__item--fill" />
+            <input type="range" class="filter-editor__item filter-editor__item--contrast" />
           </div>
 
           <div class="uploader-filter__button fliter-button">
@@ -208,7 +214,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </main>
 
   <!-- /MAIN -->
