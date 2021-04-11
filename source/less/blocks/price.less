@@ -1,7 +1,8 @@
 .price {
   background-color: @white;
+
   &__bg {
-    background-image: url(../../img/grey-bg-offers.png);
+    background-image: "url(../../img/grey-bg-offers.png)";
     width: 100%;
     height: 100%;
   }
@@ -12,12 +13,14 @@
   padding-top: 83px;
   padding-bottom: 45px;
   width: 100%;
-  border-spacing: 0px;
+  border-spacing: 0;
+
   &__th {
-    border: 1px solid #E5E5E5;
-    border-radius: 1px 0px 0px 0px;
+    border: 1px solid #e5e5e5;
+    border-radius: 1px 0 0 0;
     background-color: #283645;
   }
+
   &__th-none {
     background-color: transparent;
     border: none;
@@ -26,9 +29,14 @@
 
 .table-body {
   &__col {
-    border: 1px solid #E5E5E5;
-    border-radius: 1px 0px 0px 0px;
+    border: 1px solid #e5e5e5;
+    border-radius: 1 0 0 0;
     background-color: @white;
+    padding: 20px 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }
 
@@ -43,6 +51,7 @@
     color: @white;
     text-transform: uppercase;
   }
+
   &__subtitle {
     margin-top: -2px;
     margin-bottom: 30px;
@@ -54,19 +63,9 @@
     text-transform: uppercase;
     color: @white;
   }
+
   &__img {
     float: left;
     margin-left: 20px;
   }
 }
-
-.table-body {
-  &__col {
-    padding: 20px 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-}
-
