@@ -1,0 +1,49 @@
+.banner {
+  background-image: url(../../img/back-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  &__title {
+    color: @white;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 91px;
+    padding-bottom: 63px;
+  }
+}
+
+.banner-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+  border: 3px solid @white;
+  border-radius: 29px;
+  padding: 21px 35px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.banner-list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  &__item {
+    margin-right: 35px;
+  }
+}
+
+.banner-list__item:nth-child(1) {
+  margin-left: 32px;
+}
+
+.banner__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: fade(@white, 70%);
+}

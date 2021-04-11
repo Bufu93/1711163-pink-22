@@ -1,0 +1,29 @@
+.reviews{
+  background-color: @white;
+  text-align: center;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  margin: 0;
+  &__author-name{
+    order: 1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__author-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  &__text {
+    order: 2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}

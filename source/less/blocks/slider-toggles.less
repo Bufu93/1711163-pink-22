@@ -1,0 +1,33 @@
+.slider-toggles__item {
+  background: transparent;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-bottom: 45px;
+  margin-top: 10px;
+  margin-right: 19px;
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: fade(@black, 30%);
+  }
+}
+
+.slider-toggles__item--active {
+  &::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: fade(@white, 30%);
+    border: 3px solid @black;
+  }
+}
+
+.slider-toggles {
+  text-align: center;
+}
